@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     #My-app
     'Home.apps.HomeConfig',
+    'account.apps.AccountConfig',
     #Persian_app
     'admin_persian'
 ]
@@ -114,12 +115,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
+
 STATIC_URL = 'statics/'
 MEDIA_URL = 'media/'
-STATICFILES_DIRS = [os.path.join("assets")]
+STATICFILES_DIRS = [os.path.join(BASE_DIR,"statics")]
 MEDIA_ROOT = os.path.join('media')
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+AUTH_USER_MODEL = "account.User"

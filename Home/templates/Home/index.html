@@ -8,15 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#b91c1c"/>
 
-    <link rel="stylesheet" href="{% static './assets/css/output.css' %}" />
-    <link rel="stylesheet" href="{% static './assets/css/font.css' %}">
+    <link rel="stylesheet" href="{% static 'css/output.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/font.css' %}">
 
     <!-- SLIDER HERO -->
-    <link rel="stylesheet" href="{% static './assets/css/owl.carousel.min.css'%}" />
-    <link rel="stylesheet" href="{% static './assets/css/owl.theme.default.min.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}" />
     <!-- PRODUCT SLIDER CSS -->
-    <link rel="stylesheet" href="{% static './assets/css/swiper-bundle.min.css'%}" />
-    <link rel="stylesheet" href="{% static './assets/css/style.product.slider.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/style.product.slider.css'%}" />
 
     <title>صفحه اصلی</title>
   </head>
@@ -27,7 +27,7 @@
       <nav
         class="relative px-5 py-2 flex flex-wrap justify-between items-start pt-5 bg-white">
         <a class="order-2" href="./index.html">
-          <img class="w-36" src="{% static './assets/image/logo.png' %}" alt="" />
+          <img class="w-36" src="{% static 'image/logo.png' %}" alt="" />
         </a>
         <div class="order-3 w-full mt-3 lg:mt-0 lg:w-5/12 lg:mr-[10%]">
           <div class="relative">
@@ -39,24 +39,24 @@
               onfocus="showModalSearch()"/>
             <div
               class="absolute inset-y-0 left-0 flex items-center pl-4">
-              <img class="w-5 h-5 text-gray-500" src="{% static '/assets/image/search.png' %}" alt="" />
+              <img class="w-5 h-5 text-gray-500" src="{% static 'image/search.png' %}" alt="" />
             </div>
             <div class="absolute w-full bg-gray-50 shadow-2xl h-auto mt-2 z-50 rounded-2xl hidden" id="showModalSearch">
               <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3 p-3">
                 <a href="" class="flex items-center bg-white p-2 rounded-xl">
-                  <img src="{% static './assets/image/product/bag.png' %}" alt="" class="w-14 rounded-lg ml-2">
+                  <img src="{% static 'image/product/bag.png' %}" alt="" class="w-14 rounded-lg ml-2">
                   <div class="text-xs opacity-70">
                     کیف لپ تاپ مدل ضدآب
                   </div>
                 </a>
                 <a href="" class="flex items-center bg-white p-2 rounded-xl">
-                  <img src="{% static './assets/image/product/bag.png' %}" alt="" class="w-14 rounded-lg ml-2">
+                  <img src="{% static 'image/product/bag.png' %}" alt="" class="w-14 rounded-lg ml-2">
                   <div class="text-xs opacity-70">
                     کیف لپ تاپ مدل ضدآب
                   </div>
                 </a>
                 <a href="" class="flex items-center bg-white p-2 rounded-xl">
-                  <img src="{% static './assets/image/product/bag.png' %}" alt="" class="w-14 rounded-lg ml-2">
+                  <img src="{% static 'image/product/bag.png' %}" alt="" class="w-14 rounded-lg ml-2">
                   <div class="text-xs opacity-70">
                     کیف لپ تاپ مدل ضدآب
                   </div>
@@ -152,14 +152,14 @@
             <a
               href="./login.html"
               class="flex items-center h-10 leading-10 px-3 mx-1 transition rounded-xl hover:bg-red-50">
-              <img class="ml-1 w-6" src="{% static './assets/image/user.png' %}" alt="" />
+              <img class="ml-1 w-6" src="{% static 'image/user.png' %}" alt="" />
               <span
                 class="text-sm opacity-95"
                 >
                 ورود | ثبت نام
               </span>
               <span>
-                <img class="w-4 mr-1" src="{% static './assets/image/chevron-down-login.png' %}" alt="" />
+                <img class="w-4 mr-1" src="{% static 'image/chevron-down-login.png' %}" alt="" />
               </span>
             </a>
             <div
@@ -188,7 +188,7 @@
                         class="flex justify-center items-center opacity-90"
                         ><img
                           class="w-8 ml-2"
-                          src="./assets/image/userNotImage.png"
+                          src="{% static 'image/userNotImage.png' %}"
                           alt="" />امیررضا کریمی</span
                       >
                     </a>
@@ -204,7 +204,7 @@
                       <span class="flex justify-center items-center text-sm opacity-90"
                         ><img
                           class="w-5 ml-1"
-                          src="{% static './assets/image/package.png' %}"
+                          src="{% static 'image/package.png' %}"
                           alt="" />سفارش ها</span
                       >
                     </a>
@@ -220,7 +220,7 @@
                       <span class="flex justify-center items-center text-sm opacity-90"
                         ><img
                           class="w-5 ml-1"
-                          src="./assets/image/heart.png"
+                          src="{% static 'image/heart.png' %}"
                           alt="" />علاقه مندی ها</span
                       >
                     </a>
@@ -234,7 +234,7 @@
                       href="#"
                       class="px-4 py-2 flex w-full items-start hover:bg-red-50 rounded-xl">
                       <span class="flex justify-center items-center text-sm opacity-90"
-                        ><img class="w-5 ml-1" src="./assets/image/exit.png" alt="" />خروج
+                        ><img class="w-5 ml-1" src="{% static 'image/exit.png' %}" alt="" />خروج
                         از حساب کاربری</span
                       >
                     </a>
@@ -254,14 +254,14 @@
               class="flex items-center h-10 leading-10 px-3 cursor-pointer no-underline hover:no-underline duration-100 mx-1 transition rounded-xl hover:bg-red-100">
               <img
                 class="inline ml-1 w-5"
-                src="./assets/image/shopping-cart.png"
+                src="{% static 'image/shopping-cart.png' %}"
                 alt="" />
               <span
                 class="text-sm text-neutral-800 hover:text-neutral-700 opacity-95">
                 سبد خرید
               </span>
               <span>
-                <img class="w-4 mr-1" src="./assets/image/chevron-down-login.png" alt="" />
+                <img class="w-4 mr-1" src="{% static 'image/chevron-down-login.png' %}" alt="" />
               </span>
             </a>
             <div
@@ -287,7 +287,7 @@
                         <div class="flex">
                           <img
                           class="w-14 ml-2 rounded-lg"
-                          src="./assets/image/product/bag.png"
+                          src="{% static 'image/product/bag.png' %}"
                           alt="" />
                           <div class="flex flex-col flex-wrap gap-y-1 justify-center">
                             <div class="opacity-80 w-full text-sm">
@@ -321,7 +321,7 @@
                         <div class="flex">
                           <img
                           class="w-14 ml-2 rounded-lg"
-                          src="./assets/image/product/bag.png"
+                          src="{% static 'image/product/bag.png' %}"
                           alt="" />
                           <div class="flex flex-col flex-wrap gap-y-1 justify-center">
                             <div class="opacity-80 w-full text-sm">
@@ -396,7 +396,7 @@
                   @mouseleave="showChildren=false">
                   <span>پوشاک</span>
                   <span>
-                    <img class="w-4 mr-1" src="./assets/image/chevron-down-login.png" alt="" />
+                    <img class="w-4 mr-1" src="{% static 'image/chevron-down-login.png' %}" alt="" />
                   </span>
                 </a>
                 <div
@@ -454,7 +454,7 @@
                   @mouseleave="showChildren=false">
                   <span>کالای دیجیتال</span>
                   <span>
-                    <img class="w-4 mr-1" src="./assets/image/chevron-down-login.png" alt="" />
+                    <img class="w-4 mr-1" src="{% static 'image/chevron-down-login.png' %}" alt="" />
                   </span>
                 </a>
                 <div
@@ -520,7 +520,7 @@
                   @mouseleave="showChildren=false">
                   <span>لوازم خانگی</span>
                   <span>
-                    <img class="w-4 mr-1" src="./assets/image/chevron-down-login.png" alt="" />
+                    <img class="w-4 mr-1" src="{% static 'image/chevron-down-login.png' %}" alt="" />
                   </span>
                 </a>
                 <div
@@ -594,7 +594,7 @@
                   @mouseleave="showChildren=false">
                   <span>زیبایی</span>
                   <span>
-                    <img class="w-4 mr-1" src="./assets/image/chevron-down-login.png" alt="" />
+                    <img class="w-4 mr-1" src="{% static 'image/chevron-down-login.png' %}" alt="" />
                   </span>
                 </a>
                 <div
@@ -652,7 +652,7 @@
                   @mouseleave="showChildren=false">
                   <span>لوازم برقی</span>
                   <span>
-                    <img class="w-4 mr-1" src="./assets/image/chevron-down-login.png" alt="" />
+                    <img class="w-4 mr-1" src="{% static 'image/chevron-down-login.png' %}" alt="" />
                   </span>
                 </a>
                 <div
@@ -734,91 +734,80 @@
                   @mouseleave="showChildren=false">
                   <span>سوپر مارکت</span>
                   <span>
-                    <img class="w-4 mr-1" src="./assets/image/chevron-down-login.png" alt="" />
+                    <img class="w-4 mr-1" src="{% static 'image/chevron-down-login.png' %}" alt="" />
                   </span>
                 </a>
-                <div
-                  class="bg-white rounded-2xl shadow-md text-sm opacity-[0.97] absolute top-auto right-0 min-w-full w-56 z-30 mt-3"
-                  x-show="showChildren"
-                  x-transition:enter="transition ease duration-300 transform"
-                  x-transition:enter-start="opacity-0 translate-y-2"
-                  x-transition:enter-end="opacity-100 translate-y-0"
-                  x-transition:leave="transition ease duration-300 transform"
-                  x-transition:leave-start="opacity-100 translate-y-0"
-                  x-transition:leave-end="opacity-0 translate-y-4"
-                  @mouseenter="showChildren=true"
-                  @mouseleave="showChildren=false"
-                  style="display: none">
-                  <div
-                    class="bg-white rounded-2xl w-full relative z-10 py-2 px-2">
-                    <ul class="list-reset">
-                      <li
-                        class="relative">
-                        <a
-                          href="./category.html"
-                          class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
-                          <span class="flex-1">صبحانه</span>
-                        </a>
-                      </li>
-                      <li
-                        class="relative">
-                        <a
-                          href="./category.html"
-                          class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
-                          <span class="flex-1">تنقلات</span>
-                        </a>
-                      </li>
-                      <li
-                        class="relative">
-                        <a
-                          href="./category.html"
-                          class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
-                          <span class="flex-1">خشکبار</span>
-                        </a>
-                      </li>
-                      <li
-                        class="relative">
-                        <a
-                          href="./category.html"
-                          class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
-                          <span class="flex-1">حبوبات و کنسرو</span>
-                        </a>
-                      </li>
-                      <li
-                        class="relative">
-                        <a
-                          href="./category.html"
-                          class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
-                          <span class="flex-1">میوه و سبزیجات</span>
-                        </a>
-                      </li>
-                      <li
-                        class="relative">
-                        <a
-                          href="./category.html"
-                          class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
-                          <span class="flex-1">سوسیس و کالباس</span>
-                        </a>
-                      </li>
-                      <li
-                        class="relative">
-                        <a
-                          href="./category.html"
-                          class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
-                          <span class="flex-1">گوشت</span>
-                        </a>
-                      </li>
-                      <li
-                        class="relative">
-                        <a
-                          href="./category.html"
-                          class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
-                          <span class="flex-1">لبنیات</span>
-                        </a>
-                      </li>
-                    </ul>
+                  <div class="bg-white rounded-2xl shadow-md text-sm opacity-[0.97] absolute top-auto right-0 min-w-full w-56 z-30 mt-3" x-show="showChildren" x-transition:enter="transition ease duration-300 transform" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease duration-300 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4" @mouseenter="showChildren=true" @mouseleave="showChildren=false" style="display: none">
+                      <div
+                              class="bg-white rounded-2xl w-full relative z-10 py-2 px-2">
+                          <ul class="list-reset">
+                              <li
+                                      class="relative">
+                                  <a
+                                          href="./category.html"
+                                          class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                      <span class="flex-1">صبحانه</span>
+                                  </a>
+                              </li>
+                              <li
+                                      class="relative">
+                                  <a
+                                          href="./category.html"
+                                          class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                      <span class="flex-1">تنقلات</span>
+                                  </a>
+                              </li>
+                              <li
+                                      class="relative">
+                                  <a
+                                          href="./category.html"
+                                          class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                      <span class="flex-1">خشکبار</span>
+                                  </a>
+                              </li>
+                              <li
+                                      class="relative">
+                                  <a
+                                          href="./category.html"
+                                          class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                      <span class="flex-1">حبوبات و کنسرو</span>
+                                  </a>
+                              </li>
+                              <li
+                                      class="relative">
+                                  <a
+                                          href="./category.html"
+                                          class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                      <span class="flex-1">میوه و سبزیجات</span>
+                                  </a>
+                              </li>
+                              <li
+                                      class="relative">
+                                  <a
+                                          href="./category.html"
+                                          class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                      <span class="flex-1">سوسیس و کالباس</span>
+                                  </a>
+                              </li>
+                              <li
+                                      class="relative">
+                                  <a
+                                          href="./category.html"
+                                          class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                      <span class="flex-1">گوشت</span>
+                                  </a>
+                              </li>
+                              <li
+                                      class="relative">
+                                  <a
+                                          href="./category.html"
+                                          class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                      <span class="flex-1">لبنیات</span>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
                   </div>
-                </div>
               </li>
               <li
                 class="block relative"
@@ -832,7 +821,7 @@
                   @mouseleave="showChildren=false">
                   <span>کودک و نوزاد</span>
                   <span>
-                    <img class="w-4 mr-1" src="./assets/image/chevron-down-login.png" alt="" />
+                    <img class="w-4 mr-1" src="{% static 'image/chevron-down-login.png' %}" alt="" />
                   </span>
                 </a>
                 <div
@@ -898,7 +887,7 @@
                 @mouseleave="showChildren=false">
                 <span>صفحات</span>
                 <span>
-                  <img class="w-4 mr-1" src="./assets/image/chevron-down-login.png" alt="" />
+                  <img class="w-4 mr-1" src="{% static 'image/chevron-down-login.png' %}" alt="" />
                 </span>
               </a>
               <div
@@ -1043,7 +1032,7 @@
           class="fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm py-5 px-6 bg-white border-r overflow-y-auto">
           <div class="flex justify-center items-center mb-4">
             <a class="order-1" href="./index.html">
-              <img class="w-32" src="./assets/image/logo.png" alt="" />
+              <img class="w-32" src="{% static 'image/logo.png"' %} alt="" />
             </a>
           </div>
           <div>
@@ -1056,7 +1045,7 @@
                       <a href="./cart.html">
                         <img
                           class="inline ml-1 w-5"
-                          src="./assets/image/shopping-cart.png"
+                          src="{% static 'image/shopping-cart.png' %}"
                           alt="" />سبد خرید</a
                       >
                     </div>
@@ -1065,7 +1054,7 @@
                       <a href="./login-register.html"
                         ><img
                           class="inline ml-1 w-5"
-                          src="./assets/image/user.png"
+                          src="{% static 'image/user.png' %}"
                           alt="" />ورود | ثبت نام</a
                       >
                     </div>
@@ -1082,7 +1071,7 @@
                   @click.prevent="showChildren=!showChildren">
                   <span>پوشاک</span>
                   <span>
-                    <img class="w-4 mr-1" src="./assets/image/chevron-down-login.png" alt="" />
+                    <img class="w-4 mr-1" src="{% static 'image/chevron-down-login.png' %}" alt="" />
                   </span>
                 </a>
                 <div
@@ -1146,7 +1135,7 @@
                   @click.prevent="showChildren=!showChildren">
                   <span>کالای دیجیتال</span>
                   <span>
-                    <img class="w-4 mr-1" src="./assets/image/chevron-down-login.png" alt="" />
+                    <img class="w-4 mr-1" src="{% static 'image/chevron-down-login.png' %}" alt="" />
                   </span>
                 </a>
                 <div
@@ -1221,7 +1210,7 @@
                   @click.prevent="showChildren=!showChildren">
                   <span>لوازم خانگی</span>
                   <span>
-                    <img class="w-4 mr-1" src="./assets/image/chevron-down-login.png" alt="" />
+                    <img class="w-4 mr-1" src="{% static 'image/chevron-down-login.png' %}" alt="" />
                   </span>
                 </a>
                 <div
@@ -1307,7 +1296,7 @@
                   @click.prevent="showChildren=!showChildren">
                   <span>زیبایی</span>
                   <span>
-                    <img class="w-4 mr-1" src="./assets/image/chevron-down-login.png" alt="" />
+                    <img class="w-4 mr-1" src="{% static 'image/chevron-down-login.png' %}" alt="" />
                   </span>
                 </a>
                 <div
@@ -1371,7 +1360,7 @@
                   @click.prevent="showChildren=!showChildren">
                   <span>لوازم برقی</span>
                   <span>
-                    <img class="w-4 mr-1" src="./assets/image/chevron-down-login.png" alt="" />
+                    <img class="w-4 mr-1" src="{% static 'image/chevron-down-login.png' %}" alt="" />
                   </span>
                 </a>
                 <div
@@ -1468,7 +1457,7 @@
                   @click.prevent="showChildren=!showChildren">
                   <span>سوپر مارکت</span>
                   <span>
-                    <img class="w-4 mr-1" src="./assets/image/chevron-down-login.png" alt="" />
+                    <img class="w-4 mr-1" src="{% static 'image/chevron-down-login.png' %}" alt="" />
                   </span>
                 </a>
                 <div
@@ -1587,7 +1576,7 @@
                   @click.prevent="showChildren=!showChildren">
                   <span>کودک و نوزاد</span>
                   <span>
-                    <img class="w-4 mr-1" src="./assets/image/chevron-down-login.png" alt="" />
+                    <img class="w-4 mr-1" src="{% static 'image/chevron-down-login.png' %}" alt="" />
                   </span>
                 </a>
                 <div
@@ -1665,22 +1654,22 @@
       <div dir="ltr" class="owl-carousel">
         <div class="box-border">
           <a href="./search.html"
-            ><img class="" src="./assets/image/heroSlider/1-mobile.jpg" alt=""
+            ><img class="" src="{% static 'image/heroSlider/1-mobile.jpg' %}" alt=""
           /></a>
         </div>
         <div class="box-border">
           <a href="./search.html"
-            ><img class="" src="./assets/image/heroSlider/2-mobile.jpg" alt=""
+  {% static '' %}          ><img class="" src="./assets/{% static 'image/heroSlider/2-mobile.jpg' %}" alt=""
           /></a>
         </div>
         <div class="box-border">
           <a href="./search.html"
-            ><img class="" src="./assets/image/heroSlider/3-mobile.gif" alt=""
+            ><img class="" src="./assets/{% static 'image/heroSlider/3-mobile.gif' %}" alt=""
           /></a>
         </div>
         <div class="box-border">
           <a href="./search.html"
-            ><img class="" src="./assets/image/heroSlider/4-mobile.jpg" alt=""
+            ><img class="" src="{% static 'image/heroSlider/4-mobile.jpg' %}" alt=""
           /></a>
         </div>
       </div>
@@ -1690,29 +1679,29 @@
       <div class="flex mb-5 md:my-5">
         <div class="md:w-3/12 mx-auto">
           <a href="#">
-            <img class="w-10/12 mx-auto rounded-xl" src="./assets/image/heroSlider/b1.jpg" alt="">
+            <img class="w-10/12 mx-auto rounded-xl" src="{% static 'image/heroSlider/b1.jpg' %}" alt="">
           </a>
         </div>
         <div class="w-9/12 mx-auto hidden md:block ">
           <div dir="ltr" class="owl-carousel">
             <div class="box-border">
               <a href="./search.html"
-                ><img class="rounded-xl" src="./assets/image/heroSlider/1-mobile.jpg" alt=""
+                ><img class="rounded-xl" src="{% static 'image/heroSlider/1-mobile.jpg' %}" alt=""
               /></a>
             </div>
             <div class="box-border">
               <a href="./search.html"
-                ><img class="rounded-xl" src="./assets/image/heroSlider/2-mobile.jpg" alt=""
+                ><img class="rounded-xl" src="{% static 'image/heroSlider/2-mobile.jpg' %}" alt=""
               /></a>
             </div>
             <div class="box-border">
               <a href="./search.html"
-                ><img class="rounded-xl" src="./assets/image/heroSlider/3-mobile.gif" alt=""
+                ><img class="rounded-xl" src="{% static 'image/heroSlider/3-mobile.gif' %}" alt=""
               /></a>
             </div>
             <div class="box-border">
               <a href="./search.html"
-                ><img class="rounded-xl" src="./assets/image/heroSlider/4-mobile.jpg" alt=""
+                ><img class="rounded-xl" src="{% static 'image/heroSlider/4-mobile.jpg' %}" alt=""
               /></a>
             </div>
           </div>
@@ -1732,7 +1721,7 @@
               <a href="./single-product.html" class="card swiper-slide my-2 p-2 md:p-3 ">
                 <div class="image-box mb-6 ">
                   <div>
-                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="./assets/image/productSlider/1.jpg" alt="" />
+                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="{% static 'image/productSlider/1.jpg' %}" alt="" />
                   </div>
                 </div>
                 <div class="space-y-3 text-center">
@@ -1754,7 +1743,7 @@
               <a href="./single-product.html" class="card swiper-slide my-2 p-2 md:p-3 ">
                 <div class="image-box mb-6 ">
                   <div>
-                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="./assets/image/productSlider/2.jpg" alt="" />
+                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="{% static '' %}{% static 'image/productSlider/2.jpg' %}" alt="" />
                   </div>
                 </div>
                 <div class="space-y-3 text-center">
@@ -1776,7 +1765,7 @@
               <a href="./single-product.html" class="card swiper-slide my-2 p-2 md:p-3 ">
                 <div class="image-box mb-6 ">
                   <div>
-                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="./assets/image/productSlider/3.jpg" alt="" />
+                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="{% static 'image/productSlider/2.jpg' %}x" alt="" />
                   </div>
                 </div>
                 <div class="space-y-3 text-center">
@@ -1798,7 +1787,7 @@
               <a href="./single-product.html" class="card swiper-slide my-2 p-2 md:p-3 ">
                 <div class="image-box mb-6 ">
                   <div>
-                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="./assets/image/productSlider/4.jpg" alt="" />
+                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="{% static 'image/productSlider/4.jpg' %}" alt="" />
                   </div>
                 </div>
                 <div class="space-y-3 text-center">
@@ -1820,7 +1809,7 @@
               <a href="./single-product.html" class="card swiper-slide my-2 p-2 md:p-3 ">
                 <div class="image-box mb-6 ">
                   <div>
-                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="./assets/image/productSlider/5.jpg" alt="" />
+                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="{% static 'image/productSlider/5.jpg' %}" alt="" />
                   </div>
                 </div>
                 <div class="space-y-3 text-center">
@@ -1842,7 +1831,7 @@
               <a href="./single-product.html" class="card swiper-slide my-2 p-2 md:p-3 ">
                 <div class="image-box mb-6 ">
                   <div>
-                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="./assets/image/productSlider/6.jpg" alt="" />
+                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="{% static 'image/productSlider/6.jpg' %}" alt="" />
                   </div>
                 </div>
                 <div class="space-y-3 text-center">
@@ -1870,10 +1859,10 @@
       <!-- SECTION IMAGE -->
       <div class="my-10">
         <a href="./search.html">
-          <img class="rounded-2xl hidden md:block" src="assets/image/sectionImage/2.webp" alt="">
+          <img class="rounded-2xl hidden md:block" src="{% static 'image/sectionImage/2.webp' %}" alt="">
         </a>
         <a href="./search.html"></a>
-          <img class="rounded-2xl md:hidden" src="assets/image/sectionImage/2-mobile.jpg" alt="">
+          <img class="rounded-2xl md:hidden" src="{% static 'image/sectionImage/2-mobile.jpg' %}" alt="">
         </a>
       </div>
       <!-- SUGGESTED CATEGORY PRODUCTS -->
@@ -1884,10 +1873,10 @@
             <div class="opacity-70 text-xs">بر اساس بازدیدهای شما</div>
           </div>
           <div class="grid grid-cols-2">
-            <div class="border-l border-b py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="./assets/image/suggested product/l1.webp" alt=""></a></div>
-            <div class="border-b py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="./assets/image/suggested product/l2.webp" alt=""></a></div>
-            <div class="border-l py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="./assets/image/suggested product/l3.webp" alt=""></a></div>
-            <div class="py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="./assets/image/suggested product/l4.webp" alt=""></a></div>
+            <div class="border-l border-b py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="{% static 'image/suggested product/l1.webp' %}" alt=""></a></div>
+            <div class="border-b py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="{% static 'image/suggested product/l2.webp' %}" alt=""></a></div>
+            <div class="border-l py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="{% static 'image/suggested product/l3.webp' %}" alt=""></a></div>
+            <div class="py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="{% static 'image/suggested product/l4.webp' %}" alt=""></a></div>
           </div>
           <div class="flex justify-center text-sm text-red-500 hover:text-red-600 transition mt-5"><a href="#">مشاهده همه</a></div>
         </div>
@@ -1897,23 +1886,23 @@
             <div class="opacity-70 text-xs">بر اساس بازدیدهای شما</div>
           </div>
           <div class="grid grid-cols-2">
-            <div class="border-l border-b py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="./assets/image/suggested product/m1.jpg" alt=""></a></div>
-            <div class="border-b py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="./assets/image/suggested product/m2.jpg" alt=""></a></div>
-            <div class="border-l py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="./assets/image/suggested product/m3.jpg" alt=""></a></div>
-            <div class="py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="./assets/image/suggested product/m4.jpg" alt=""></a></div>
+            <div class="border-l border-b py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="{% static 'image/suggested product/m1.jpg' %}" alt=""></a></div>
+            <div class="border-b py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="{% static 'image/suggested product/m2.jpg' %}" alt=""></a></div>
+            <div class="border-l py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="{% static 'image/suggested product/m3.jpg' %}" alt=""></a></div>
+            <div class="py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="{% static 'image/suggested product/m4.jpg' %}" alt=""></a></div>
           </div>
           <div class="flex justify-center text-sm text-red-500 hover:text-red-600 transition mt-5"><a href="#">مشاهده همه</a></div>
         </div>
-        <div class="bg-white p-3 border-l">
+        <div class="bg-white p-3 border-l">{% static '' %}
           <div class="flex flex-col gap-y-2 mb-5">
             <div class="opacity-80">هدفون، هدست و هندزفری</div>
             <div class="opacity-70 text-xs">بر اساس بازدیدهای شما</div>
           </div>
           <div class="grid grid-cols-2">
-            <div class="border-l border-b py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="./assets/image/suggested product/h1.jpg" alt=""></a></div>
-            <div class="border-b py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="./assets/image/suggested product/h2.jpg" alt=""></a></div>
-            <div class="border-l py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="./assets/image/suggested product/h3.jpg" alt=""></a></div>
-            <div class="py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="./assets/image/suggested product/h4.jpg" alt=""></a></div>
+            <div class="border-l border-b py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="{% static 'image/suggested product/h1.jpg' %}" alt=""></a></div>
+            <div class="border-b py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="/{% static 'image/suggested product/h1.jpg' %}x" alt=""></a></div>
+            <div class="border-l py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="{% static 'image/suggested product/h3.jpg' %}" alt=""></a></div>
+            <div class="py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="{% static 'image/suggested product/h4.jpg' %}" alt=""></a></div>
           </div>
           <div class="flex justify-center text-sm text-red-500 hover:text-red-600 transition mt-5"><a href="#">مشاهده همه</a></div>
         </div>
@@ -1923,10 +1912,10 @@
             <div class="opacity-70 text-xs">بر اساس بازدیدهای شما</div>
           </div>
           <div class="grid grid-cols-2">
-            <div class="border-l border-b py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="./assets/image/suggested product/w1.jpg" alt=""></a></div>
-            <div class="border-b py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="./assets/image/suggested product/w2.jpg" alt=""></a></div>
-            <div class="border-l py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="./assets/image/suggested product/w3.jpg" alt=""></a></div>
-            <div class="py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="./assets/image/suggested product/w4.jpg" alt=""></a></div>
+            <div class="border-l border-b py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="{% static 'image/suggested product/h4.jpg' %}x" alt=""></a></div>
+            <div class="border-b py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="{% static 'image/suggested product/w2.jpg' %}" alt=""></a></div>
+            <div class="border-l py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="{% static 'image/suggested product/w3.jpg' %}" alt=""></a></div>
+            <div class="py-2"><a href="#"><img class="max-w-[130px] mx-auto" src="{% static 'image/suggested product/w4.jpg' %}" alt=""></a></div>
           </div>
           <div class="flex justify-center text-sm text-red-500 hover:text-red-600 transition mt-5"><a href="#">مشاهده همه</a></div>
         </div>
@@ -1934,16 +1923,16 @@
       <!-- 4 IMAGE -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         <a href="./search.html">
-          <img class="rounded-xl" src="./assets/image/fourImage/1.jpg" alt="">
+          <img class="rounded-xl" src="{% static '' %}{% static 'image/fourImage/1.jpg' %}" alt="">
         </a>
         <a href="./search.html">
-          <img class="rounded-xl" src="./assets/image/fourImage/2.jpg" alt="">
+          <img class="rounded-xl" src="{% static 'image/fourImage/2.jpg' %}" alt="">
         </a>
         <a href="./search.html">
-          <img class="rounded-xl" src="./assets/image/fourImage/3.jpg" alt="">
+          <img class="rounded-xl" src="{% static 'image/fourImage/2.jpg' %}" alt="">
         </a>
         <a href="./search.html">
-          <img class="rounded-xl" src="./assets/image/fourImage/4.jpg" alt="">
+          <img class="rounded-xl" src="{% static 'image/fourImage/4.jpg' %}" alt="">
         </a>
       </div>
       <!-- GOOD CATEGORYS -->
@@ -1954,31 +1943,31 @@
         </div>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-x-4 gap-y-4 md:gap-x-8 2xl:gap-x-10 px-3 md:px-8 lg:px-28">
           <a href="./search.html" class="flex justify-center items-center flex-col gap-y-3 hover:scale-105 transition">
-            <img src="./assets/image/goodCategory/mobile.webp" alt="">
+            <img src="{% static 'image/goodCategory/mobile.webp' %}" alt="">
             <div class="text-sm opacity-90">موبایل</div>
           </a>
           <a href="./search.html" class="flex justify-center items-center flex-col gap-y-3 hover:scale-105 transition">
-            <img src="./assets/image/goodCategory/biutiful.webp" alt="">
+            <img src="{% static 'image/goodCategory/biutiful.webp' %}" alt="">
             <div class="text-sm opacity-90">زیبایی</div>
           </a>
           <a href="./search.html" class="flex justify-center items-center flex-col gap-y-3 hover:scale-105 transition">
-            <img src="./assets/image/goodCategory/book.webp" alt="">
+            <img src="{% static 'image/goodCategory/book.webp' %}" alt="">
             <div class="text-sm opacity-90">کتاب و دفتر</div>
           </a>
           <a href="./search.html" class="flex justify-center items-center flex-col gap-y-3 hover:scale-105 transition">
-            <img src="./assets/image/goodCategory/digital.webp" alt="">
+            <img src="{% static 'image/goodCategory/digital.webp' %}" alt="">
             <div class="text-sm opacity-90">کالای دیجیتال</div>
           </a>
           <a href="./search.html" class="flex justify-center items-center flex-col gap-y-3 hover:scale-105 transition">
-            <img src="./assets/image/goodCategory/market.webp" alt="">
+            <img src="{% static 'image/goodCategory/market.webp' %}" alt="">
             <div class="text-sm opacity-90">سوپر مارکت</div>
           </a>
           <a href="./search.html" class="flex justify-center items-center flex-col gap-y-3 hover:scale-105 transition">
-            <img src="./assets/image/goodCategory/mode.webp" alt="">
+            <img src="{% static 'image/goodCategory/mode.webp' %}" alt="">
             <div class="text-sm opacity-90">مد و پوشاک</div>
           </a>
           <a href="./search.html" class="flex justify-center items-center flex-col gap-y-3 hover:scale-105 transition">
-            <img src="./assets/image/goodCategory/tools.webp" alt="">
+            <img src="{% static 'image/goodCategory/mode.webp' %}x" alt="">
             <div class="text-sm opacity-90">ابزارآلات</div>
           </a>
         </div>
@@ -1992,12 +1981,12 @@
         </div>
         <!-- SLIDER -->
         <div class="containerPSlider swiper">
-          <div class="slide-container1 px-2">
+          <div class="slide-container1 px-2">{% static '' %}
             <div class="card-wrapper swiper-wrapper py-4">
               <a href="./single-product.html" class="card swiper-slide my-2 p-2 md:p-3 ">
                 <div class="image-box mb-6 ">
                   <div>
-                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="./assets/image/productSlider/7.jpg" alt="" />
+                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="{% static 'image/productSlider/7.jpg' %}" alt="" />
                   </div>
                 </div>
                 <div class="space-y-3 text-center">
@@ -2019,7 +2008,7 @@
               <a href="./single-product.html" class="card swiper-slide my-2 p-2 md:p-3 ">
                 <div class="image-box mb-6 ">
                   <div>
-                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="./assets/image/productSlider/8.jpg" alt="" />
+                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="{% static 'image/productSlider/7.jpg' %}x" alt="" />
                   </div>
                 </div>
                 <div class="space-y-3 text-center">
@@ -2041,7 +2030,7 @@
               <a href="./single-product.html" class="card swiper-slide my-2 p-2 md:p-3 ">
                 <div class="image-box mb-6 ">
                   <div>
-                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="./assets/image/productSlider/9.jpg" alt="" />
+                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="{% static 'image/productSlider/9.jpg' %}" alt="" />
                   </div>
                 </div>
                 <div class="space-y-3 text-center">
@@ -2063,7 +2052,7 @@
               <a href="./single-product.html" class="card swiper-slide my-2 p-2 md:p-3 ">
                 <div class="image-box mb-6 ">
                   <div>
-                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="./assets/image/productSlider/10.jpg" alt="" />
+                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="{% static 'image/productSlider/10.jpg' %}" alt="" />
                   </div>
                 </div>
                 <div class="space-y-3 text-center">
@@ -2085,7 +2074,7 @@
               <a href="./single-product.html" class="card swiper-slide my-2 p-2 md:p-3 ">
                 <div class="image-box mb-6 ">
                   <div>
-                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="./assets/image/productSlider/11.jpg" alt="" />
+                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="{% static 'image/productSlider/9.jpg' %}" alt="" />
                   </div>
                 </div>
                 <div class="space-y-3 text-center">
@@ -2096,7 +2085,7 @@
                   </span>
                   <div class="flex justify-center text-xs opacity-75">
                     <div class="line-through">1.350.000</div>
-                    <div class="line-through">تومان</div>
+                    <div class="line-through">تومان</div>{% static '' %}
                   </div>
                   <div class="flex justify-center mt-1 mb-2 text-sm">
                     <div>1.100.000</div>
@@ -2107,7 +2096,7 @@
               <a href="./single-product.html" class="card swiper-slide my-2 p-2 md:p-3 ">
                 <div class="image-box mb-6 ">
                   <div>
-                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="./assets/image/productSlider/12.jpg" alt="" />
+                    <img class="hover:scale-105 transition rounded-3xl w-full mx-auto" src="{% static 'image/productSlider/12.jpg' %}" alt="" />
                   </div>
                 </div>
                 <div class="space-y-3 text-center">
@@ -2135,10 +2124,10 @@
       <!-- SECTION IMAGE 2 -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <a href="./search.html">
-          <img class="rounded-xl" src="./assets/image/twoImage/1.jpg" alt="">
+          <img class="rounded-xl" src="{% static '' %}{% static 'image/productSlider/12.jpg' %}x" alt="">
         </a>
         <a href="./search.html">
-          <img class="rounded-xl" src="./assets/image/twoImage/2.jpg" alt="">
+          <img class="rounded-xl" src="{% static 'image/twoImage/2.jpg' %}" alt="">
         </a>
       </div>
       <!-- OFF PRODUCTS -->
@@ -2149,7 +2138,7 @@
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 px-5">
           <a href="./single-product.html" class="my-2 p-2 md:p-3">
             <div class="image-box">
-              <img class="w-full mx-auto mb-5 max-w-[150px]" src="./assets/image/productSlider/7.jpg" alt="" />
+              <img class="w-full mx-auto mb-5 max-w-[150px]" src="{% static 'image/productSlider/7.jpg' %}" alt="" />
             </div>
             <div class="flex justify-between">
               <div class="bg-red-600 text-white h-full text-xs px-1 md:px-2 py-1 rounded-full">
@@ -2168,7 +2157,7 @@
           </a>
           <a href="./single-product.html" class="my-2 p-2 md:p-3">
             <div class="image-box">
-              <img class="w-full mx-auto mb-5 max-w-[150px]" src="./assets/image/productSlider/3.jpg" alt="" />
+              <img class="w-full mx-auto mb-5 max-w-[150px]" src="{% static 'image/productSlider/7.jpg' %}" alt="" />
             </div>
             <div class="flex justify-between">
               <div class="bg-red-600 text-white h-full text-xs px-1 md:px-2 py-1 rounded-full">
@@ -2187,7 +2176,7 @@
           </a>
           <a href="./single-product.html" class="my-2 p-2 md:p-3">
             <div class="image-box">
-              <img class="w-full mx-auto mb-5 max-w-[150px]" src="./assets/image/productSlider/1.jpg" alt="" />
+              <img class="w-full mx-auto mb-5 max-w-[150px]" src="./assets/{% static 'image/productSlider/1.jpg' %}" alt="" />
             </div>
             <div class="flex justify-between">
               <div class="bg-red-600 text-white h-full text-xs px-1 md:px-2 py-1 rounded-full">
@@ -2206,7 +2195,7 @@
           </a>
           <a href="./single-product.html" class="my-2 p-2 md:p-3">
             <div class="image-box">
-              <img class="w-full mx-auto mb-5 max-w-[150px]" src="./assets/image/productSlider/6.jpg" alt="" />
+              <img class="w-full mx-auto mb-5 max-w-[150px]" src="{% static 'image/productSlider/6.jpg' %}" alt="" />
             </div>
             <div class="flex justify-between">
               <div class="bg-red-600 text-white h-full text-xs px-1 md:px-2 py-1 rounded-full">
@@ -2225,7 +2214,7 @@
           </a>
           <a href="./single-product.html" class="my-2 p-2 md:p-3">
             <div class="image-box">
-              <img class="w-full mx-auto mb-5 max-w-[150px]" src="./assets/image/productSlider/2.jpg" alt="" />
+              <img class="w-full mx-auto mb-5 max-w-[150px]" src="{% static 'image/productSlider/2.jpg' %}" alt="" />
             </div>
             <div class="flex justify-between">
               <div class="bg-red-600 text-white h-full text-xs px-1 md:px-2 py-1 rounded-full">
@@ -2244,7 +2233,26 @@
           </a>
           <a href="./single-product.html" class="my-2 p-2 md:p-3">
             <div class="image-box">
-              <img class="w-full mx-auto mb-5 max-w-[150px]" src="./assets/image/productSlider/17.jpg" alt="" />
+              <img class="w-full mx-auto mb-5 max-w-[150px]" src="{% static 'image/productSlider/17.jpg' %}" alt="" />
+            </div>
+            <div class="flex justify-between">
+              <div class="bg-red-600 text-white h-full text-xs px-1 md:px-2 py-1 rounded-full">
+                10%
+              </div>
+              <div class="space-y-3 text-center">
+                <div class="flex justify-center mt-1 mb-2 text-xs md:text-sm opacity-90">
+                  <div>1,100,000</div>
+                  <div>تومان</div>
+                </div>
+                <div class="flex justify-center text-xs opacity-75 pl-6">
+                  <div class="line-through">1,350,000</div>
+                </div>
+              </div>{% static '' %}
+            </div>
+          </a>
+          <a href="./single-product.html" class="my-2 p-2 md:p-3">
+            <div class="image-box">
+              <img class="w-full mx-auto mb-5 max-w-[150px]" src="{% static 'image/productSlider/1.jpg' %}" alt="" />
             </div>
             <div class="flex justify-between">
               <div class="bg-red-600 text-white h-full text-xs px-1 md:px-2 py-1 rounded-full">
@@ -2263,7 +2271,7 @@
           </a>
           <a href="./single-product.html" class="my-2 p-2 md:p-3">
             <div class="image-box">
-              <img class="w-full mx-auto mb-5 max-w-[150px]" src="./assets/image/productSlider/1.jpg" alt="" />
+              <img class="w-full mx-auto mb-5 max-w-[150px]" src="{% static 'image/productSlider/6.jpg' %}" alt="" />
             </div>
             <div class="flex justify-between">
               <div class="bg-red-600 text-white h-full text-xs px-1 md:px-2 py-1 rounded-full">
@@ -2282,7 +2290,7 @@
           </a>
           <a href="./single-product.html" class="my-2 p-2 md:p-3">
             <div class="image-box">
-              <img class="w-full mx-auto mb-5 max-w-[150px]" src="./assets/image/productSlider/6.jpg" alt="" />
+              <img class="w-full mx-auto mb-5 max-w-[150px]" src="{% static 'image/productSlider/2.jpg' %}" alt="" />
             </div>
             <div class="flex justify-between">
               <div class="bg-red-600 text-white h-full text-xs px-1 md:px-2 py-1 rounded-full">
@@ -2301,7 +2309,7 @@
           </a>
           <a href="./single-product.html" class="my-2 p-2 md:p-3">
             <div class="image-box">
-              <img class="w-full mx-auto mb-5 max-w-[150px]" src="./assets/image/productSlider/2.jpg" alt="" />
+              <img class="w-full mx-auto mb-5 max-w-[150px]" src="{% static 'image/productSlider/17.jpg' %}" alt="" />
             </div>
             <div class="flex justify-between">
               <div class="bg-red-600 text-white h-full text-xs px-1 md:px-2 py-1 rounded-full">
@@ -2320,7 +2328,7 @@
           </a>
           <a href="./single-product.html" class="my-2 p-2 md:p-3">
             <div class="image-box">
-              <img class="w-full mx-auto mb-5 max-w-[150px]" src="./assets/image/productSlider/17.jpg" alt="" />
+              <img class="w-full mx-auto mb-5 max-w-[150px]" src="{% static 'image/productSlider/7.jpg' %}" alt="" />
             </div>
             <div class="flex justify-between">
               <div class="bg-red-600 text-white h-full text-xs px-1 md:px-2 py-1 rounded-full">
@@ -2339,26 +2347,7 @@
           </a>
           <a href="./single-product.html" class="my-2 p-2 md:p-3">
             <div class="image-box">
-              <img class="w-full mx-auto mb-5 max-w-[150px]" src="./assets/image/productSlider/7.jpg" alt="" />
-            </div>
-            <div class="flex justify-between">
-              <div class="bg-red-600 text-white h-full text-xs px-1 md:px-2 py-1 rounded-full">
-                10%
-              </div>
-              <div class="space-y-3 text-center">
-                <div class="flex justify-center mt-1 mb-2 text-xs md:text-sm opacity-90">
-                  <div>1,100,000</div>
-                  <div>تومان</div>
-                </div>
-                <div class="flex justify-center text-xs opacity-75 pl-6">
-                  <div class="line-through">1,350,000</div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="./single-product.html" class="my-2 p-2 md:p-3">
-            <div class="image-box">
-              <img class="w-full mx-auto mb-5 max-w-[150px]" src="./assets/image/productSlider/3.jpg" alt="" />
+              <img class="w-full mx-auto mb-5 max-w-[150px]" src="{% static 'image/productSlider/3.jpg' %}" alt="" />
             </div>
             <div class="flex justify-between">
               <div class="bg-red-600 text-white h-full text-xs px-1 md:px-2 py-1 rounded-full">
@@ -2388,37 +2377,37 @@
           <div class="slide-container-brand px-2">
             <div class="card-wrapper swiper-wrapper py-4 items-center">
               <a href="./#" class="card swiper-slide">
-                <img class="max-w-[110px]" src="./assets/image/brands/1.png" alt="" />
+                <img class="max-w-[110px]" src="{% static 'image/brands/1.png' %}" alt="" />
               </a>
               <a href="./#" class="card swiper-slide">
-                <img class="max-w-[110px]" src="./assets/image/brands/2.png" alt="" />
+                <img class="max-w-[110px]" src="{% static 'image/brands/2.png' %}" alt="" />
               </a>
               <a href="./#" class="card swiper-slide">
-                <img class="max-w-[110px]" src="./assets/image/brands/3.png" alt="" />
+                <img class="max-w-[110px]" src="{% static 'image/brands/2.png' %}" alt="" />
               </a>
               <a href="./#" class="card swiper-slide">
-                <img class="max-w-[110px]" src="./assets/image/brands/4.png" alt="" />
+                <img class="max-w-[110px]" src="{% static 'image/brands/4.png' %}" alt="" />
               </a>
               <a href="./#" class="card swiper-slide">
-                <img class="max-w-[110px]" src="./assets/image/brands/5.jpg" alt="" />
+                <img class="max-w-[110px]" src="{% static 'image/brands/5.jpg' %}" alt="" />
               </a>
               <a href="./#" class="card swiper-slide">
-                <img class="max-w-[110px]" src="./assets/image/brands/6.png" alt="" />
+                <img class="max-w-[110px]" src="{% static 'image/brands/6.png' %}" alt="" />
               </a>
               <a href="./#" class="card swiper-slide">
-                <img class="max-w-[110px]" src="./assets/image/brands/7.jpg" alt="" />
+                <img class="max-w-[110px]" src="{% static 'image/brands/7.jpg' %}" alt="" />
               </a>
               <a href="./#" class="card swiper-slide">
-                <img class="max-w-[110px]" src="./assets/image/brands/8.png" alt="" />
+                <img class="max-w-[110px]" src="{% static 'image/brands/8.png' %}" alt="" />
               </a>
               <a href="./#" class="card swiper-slide">
-                <img class="max-w-[110px]" src="./assets/image/brands/9.png" alt="" />
+                <img class="max-w-[110px]" src="{% static 'image/brands/9.png' %}" alt="" />{% static '' %}
               </a>
               <a href="./#" class="card swiper-slide">
-                <img class="max-w-[110px]" src="./assets/image/brands/1.png" alt="" />
+                <img class="max-w-[110px]" src="{% static 'image/brands/1.png' %}" alt="" />
               </a>
               <a href="./#" class="card swiper-slide">
-                <img class="max-w-[110px]" src="./assets/image/brands/1.png" alt="" />
+                <img class="max-w-[110px]" src="{% static 'image/brands/1.png' %}" alt="" />
               </a>
             </div>
           </div>
@@ -2435,7 +2424,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-10 gap-5">
           <a href="./blog(single).html" class="shadow-lg rounded-3xl p-4 hover:text-red-600 transition">
             <div>
-              <img class="rounded-xl hover:scale-105 transition" src="./assets/image/blog/lavazem.jpg" alt="">
+              <img class="rounded-xl hover:scale-105 transition" src="{% static 'image/blog/lavazem.jpg' %}" alt="">
             </div>
             <div class="text-sm opacity-90 py-5">
               لوازم آشپزی مورد نیاز من.
@@ -2443,7 +2432,7 @@
           </a>
           <a href="./blog(single).html" class="shadow-lg rounded-3xl p-4 hover:text-red-600 transition">
             <div>
-              <img class="rounded-xl hover:scale-105 transition" src="./assets/image/blog/bag.jpg" alt="">
+              <img class="rounded-xl hover:scale-105 transition" src="{% static 'image/blog/lavazem.jpg' %}x" alt="">
             </div>
             <div class="text-sm opacity-90 py-5">
               چه چیزهایی با خودم نیازه ببرم کوه؟
@@ -2451,7 +2440,7 @@
           </a>
           <a href="./blog(single).html" class="shadow-lg rounded-3xl p-4 hover:text-red-600 transition">
             <div>
-              <img class="rounded-xl hover:scale-105 transition" src="./assets/image/blog/car.jpg" alt="">
+              <img class="rounded-xl hover:scale-105 transition" src="{% static 'image/blog/lavazem.jpg' %}x" alt="">
             </div>
             <div class="text-sm opacity-90 py-5">
               چرا نباید در هوای بارانی در فصل زمستان و بهار آفرود بریم؟
@@ -2459,7 +2448,7 @@
           </a>
           <a href="./blog(single).html" class="shadow-lg rounded-3xl p-4 hover:text-red-600 transition">
             <div>
-              <img class="rounded-xl hover:scale-105 transition" src="./assets/image/blog/chador.jpg" alt="">
+              <img class="rounded-xl hover:scale-105 transition" src="{% static 'image/blog/chador.jpg' %}" alt="">
             </div>
             <div class="text-sm opacity-90 py-5">
               چادر ضد آب یا پارچه ای؟
@@ -2480,19 +2469,19 @@
           </span>
         </div>
         <div class="flex justify-center items-center flex-col rounded-3xl w-32 h-24">
-          <img class="w-20" src="./assets/image/services/days-return.svg" alt="">
+          <img class="w-20" src="{% static 'image/services/days-return.svg' %}" alt="">
           <span class="text-sm opacity-80">
             ضمانت بازگشت کالا
           </span>
         </div>
         <div class="flex justify-center items-center flex-col rounded-3xl w-32 h-24">
-          <img class="w-20" src="./assets/image/services/express-delivery.svg" alt="">
+          <img class="w-20" src="{% static 'image/services/days-return.svg' %}x" alt="">
           <span class="text-sm opacity-80">
             تحویل سریع
-          </span>
+          </span>{% static '' %}
         </div>
         <div class="flex justify-center items-center flex-col rounded-3xl w-32 h-24">
-          <img class="w-20" src="./assets/image/services/original-products.svg" alt="">
+          <img class="w-20" src="{% static 'image/services/original-products.svg' %}" alt="">
           <span class="text-sm opacity-80">
             ضمانت اصل بودن
           </span>
@@ -2608,10 +2597,10 @@
             </div>
             <div class="flex items-center justify-center gap-x-5">
               <a href="#">
-                <img class="w-28 h-auto" src="./assets/image/logoSecrets/symbol-02.png" alt="">
+                <img class="w-28 h-auto" src="{% static '' %}{% static 'image/logoSecrets/symbol-02.png' %}" alt="">
               </a>
               <a href="#">
-                <img class="w-20 h-auto" src="./assets/image/logoSecrets/zarinPal.png" alt="">
+                <img class="w-20 h-auto" src="{% static 'image/logoSecrets/zarinPal.png' %}" alt="">
               </a>
             </div>
           </div>
@@ -2631,14 +2620,14 @@
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer>
   </script>
   <!--MOBILE NAVBAR-->
-  <script src="./assets/js/navbar.js"></script>
+  <script src="{% static 'js/navbar.js' %}"></script>
   <!-- SHOW MODAL SEARCH -->
-  <script src="./assets/js/searchBox.js"></script>
+  <script src="{% static 'js/searchBox.js' %}"></script>
   <!-- SLIDER HERO -->
-  <script src="./assets/js/jquery.min.js"></script>
-  <script src="./assets/js/owl.carousel.min.js"></script>
-  <script src="./assets/js/sliderHero.js"></script>
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/sliderHero.js' %}"></script>
   <!-- PRODUCT SLIDER -->
-  <script src="./assets/js/swiper-bundle.min.js"></script>
-  <script src="./assets/js/scriptSlider.style.js"></script>
+  <script src="{% static 'js/sliderHero.js' %}x"></script>
+  <script src="{% static 'js/scriptSlider.style.js' %}"></script>
 </html>
