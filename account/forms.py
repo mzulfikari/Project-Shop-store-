@@ -12,18 +12,18 @@ class UserCreationForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ["Phone", "verification_time"]
+        fields = ["Phone", "last_name"]
 
     def clean_password2(self):
-        # Check that the two password entries match
         password1 = self.cleaned_data.get("password1")
         password2 = self.cleaned_data.get("password2")
         if password1 and password2 and password1 != password2:
-            raise ValidationError("Passwords don't match")
+            raise ValidationError("گذرواژه ها مطابقت ندارند")
+        if len(password1) < 8:
+            raise ValidationError("حداقل 8 کاارکتر وارد کنید ")
         return password2
 
     def save(self, commit=True):
-        # Save the provided password in hashed format
         user = super().save(commit=False)
         user.set_password(self.cleaned_data["password1"])
         if commit:
@@ -33,8 +33,10 @@ class UserCreationForm(forms.ModelForm):
 
 class UserChangeForm(forms.ModelForm):
     password = ReadOnlyPasswordHashField()
-
     class Meta:
         model = User
-        fields = ["Phone", "password", "verification_time", "is_active", "is_admin"]
+        fields = ["Phone", "password", "first_name","last_name", "is_active", "is_admin"]
 
+class LoginForm(forms.Form):
+    phone = forms.CharField(widget=forms.TextInput(attrs={'class':'w-full drop-shadow-lg outline-none rounded-2xl py-2 text-center'}))
+    password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'w-full drop-shadow-lg outline-none rounded-2xl py-2 text-center'}))

@@ -11,7 +11,7 @@ class User(AbstractBaseUser):
     )
     first_name = models.CharField(max_length=50,verbose_name='نام')
     last_name = models.CharField(max_length=50, verbose_name='نام خانوادگی')
-    verification_time = models.DateField()
+    verification_time = models.DateField(null=True, blank=True)
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)
     email = models.EmailField(verbose_name= 'ایمیل')
@@ -21,7 +21,7 @@ class User(AbstractBaseUser):
     objects = UserManager()
 
     USERNAME_FIELD = "Phone"
-    REQUIRED_FIELDS = [""]
+    REQUIRED_FIELDS = []
 
     def __str__(self):
         return f"{self.first_name} {self.last_name}"

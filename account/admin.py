@@ -10,12 +10,12 @@ class UserAdmin(BaseUserAdmin):
     add_form = UserCreationForm
 
 
-    list_display = ["email", "verification_time", "is_admin"]
+    list_display = ["Phone","first_name","last_name", "is_admin"]
     list_filter = ["is_admin"]
     fieldsets = [
-        (None, {"fields": ["email", "password"]}),
-        ("Personal info", {"fields": ["verification_time"]}),
-        ("Permissions", {"fields": ["is_admin"]}),
+        (None, {"fields": ["Phone", "password"]}),
+        ("اطلاعات فردی", {"fields": ["first_name","last_name"]}),
+        ("وضعیت ادمین", {"fields": ["is_admin"]}),
     ]
 
     add_fieldsets = [
@@ -23,14 +23,13 @@ class UserAdmin(BaseUserAdmin):
             None,
             {
                 "classes": ["wide"],
-                "fields": ["Phone", "verification_time", "password1", "password2"],
+                "fields": ["Phone", "password1", "password2"],
             },
         ),
     ]
     search_fields = ["Phone"]
     ordering = ["Phone"]
     filter_horizontal = []
-
 
 
 admin.site.register(User, UserAdmin)

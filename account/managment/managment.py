@@ -2,14 +2,14 @@ from django.contrib.auth.models import BaseUserManager
 #پروفایل ادمین
 
 class UserManager(BaseUserManager):
-    def create_user(self, Phone, verification_time, password=None):
+    def create_user(self, Phone, password=None):
 
         if not Phone:
             raise ValueError("Users must have an Phone number")
 
         user = self.model(
             Phone=self.normalize_email(Phone),
-           verification_time=verification_time,
+            password=password,
         )
 
         user.set_password(password)
@@ -18,13 +18,11 @@ class UserManager(BaseUserManager):
 
 #پروفایل کاربر سوپر
 
-    def create_superuser(self, Pohne,verification_time, password=None):
+    def create_superuser(self, Phone, password=None):
 
         user = self.create_user(
-            Pohne,
+            Phone,
             password=password,
-            verification_time=verification_time
-
         )
         user.is_admin = True
         user.save(using=self._db)
