@@ -24,11 +24,11 @@ A simple and functional **online store** project built with **Django**. This pro
    git clone https://github.com/mzulfikari/Project-Shop-store-.git
 
 2. Navigate to the project directory:
-
+   
 cd Project-Shop-store-
 
 
-3. Create and activate a virtual environment:
+4. Create and activate a virtual environment:
 
 python -m venv venv
 source venv/bin/activate   # On Windows use: venv\Scripts\activate
