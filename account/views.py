@@ -1,7 +1,7 @@
 from django.contrib.auth import authenticate , login, logout
 from django.shortcuts import render , redirect
 from django.views import View
-from .forms import *
+from .forms import LoginForm,RegisterForm
 
 class UserLogin(View):
     @staticmethod
@@ -23,3 +23,8 @@ class UserLogin(View):
             form.add_error("phone","لطفا دوباره بررسی کنید اطلاعات وارد شده صحیح نمی باشد")
 
         return render(request,'login.html',{'form':form})
+
+class UserRegister(View):
+    def get (self,request):
+        form = RegisterForm()
+        return render(request, 'register.html', {'form':form})

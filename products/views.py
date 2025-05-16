@@ -1,38 +1,17 @@
 from django.db.models import Q
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, TemplateView
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.urls import reverse_lazy
-from django.shortcuts import get_object_or_404, redirect
 from django.contrib import messages
 import django_filters
 from django_filters.views import FilterView
-from carts.models import Cart
 from .models import Product, MainCategory
 from carts.forms import CartItemForm
 from configs.sepandyar_webAPI import get_product
-
-# class ProductFilter(django_filters.FilterSet):
-#     class Meta:
-#         model = Product
-#         fields = {
-#             'name': ['exact', 'icontains'],
-#             'brand': ['exact', 'icontains'],
-#             'category': ['exact'],
-#             'colors': ['exact'],
-#             'price': ['gte', 'lte'],
-#             'discount': ['gte', 'lte'],
-#             'avg_rate': ['gte', 'lte'],
-#             'created': ['gte', 'lte'],
-#         }
-
-
-# /products/?name=product1&brand__icontains=brand1&price__gte=1000&price__lte=5000&ordering=price
 
 
 class ProductFilter(django_filters.FilterSet):
     name = django_filters.CharFilter(field_name='name', lookup_expr='contains')
     brand = django_filters.CharFilter(field_name='brand', lookup_expr='contains')
-    # category = django_filters.ModelMultipleChoiceFilter(queryset=MainCategory.objects.all())
     category = django_filters.CharFilter(method='filter_by_category_name_or_parent')
     price_min = django_filters.NumberFilter(field_name='price', lookup_expr='gte', label='حداقل قیمت')
     price_max = django_filters.NumberFilter(field_name='price', lookup_expr='lte', label='حداکثر قیمت')
@@ -42,7 +21,7 @@ class ProductFilter(django_filters.FilterSet):
             ('created', 'created'),
             ('price', 'price'),
             ('discount', 'discount'),
-            # ('avg_rate', 'avg_rate'),
+
         )
     )
 
@@ -57,7 +36,7 @@ class ProductFilter(django_filters.FilterSet):
 
 
 class HomeView(TemplateView):
-    template_name = 'products/home.html'
+    template_name = ''
 
     def get(self, request, *args, **kwargs):
         messages.warning(request, 'سایت در مرحله تست و ارزیابی می باشد ، لطفا از خرید و ثبت سفارش خودداری فرمایید.')
@@ -91,22 +70,12 @@ class ProductListView(FilterView):
 
 class ProductDetailView(LoginRequiredMixin, DetailView):
     model = Product
-    template_name = 'products/product-detail.html'
+    template_name = ''
     context_object_name = 'product'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        # cart, _ = Cart.objects.get_or_create(user=self.request.user)
-        # for cart_item in cart.cart_items.all():
-        #     if cart_item.product.id == self.get_object().id:
-        #         context['cart_item'] = cart_item
-        #     else:
-        #         context['cart_item'] = None
 
         context['form'] = CartItemForm()
-        # try:
-        #     context['quantity'] = int(get_product(self.get_object().code)['Quantity'])
-        # except Exception as e:
-        #     print(str(e))
-        #     context['quantity'] = 1
+
         return context
